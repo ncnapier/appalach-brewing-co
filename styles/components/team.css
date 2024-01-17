@@ -1,0 +1,160 @@
+.team {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+
+.team__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.team__title {
+    font-size: var(--size-2xl);
+    color: var(--clr-forest);
+}
+
+.team__description {
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+}
+
+.team__hr {
+    border-color: var(--clr-sate800);
+}
+
+.team__img {
+    border-radius: 50%;
+}
+
+.team__subtitle {
+    font-size: var(--size-sm);
+    color: var(--clr-slate400);
+}
+
+.team__ul-container {
+    display: flex;
+}
+
+.team__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style-type: '\1F44D';
+    padding-left: 1em;
+    flex: 1;
+}
+
+.team__list {
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+}
+
+.team__list::before {
+    content: '';
+    margin-left: 0.5em;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .team {
+        gap: 1.5rem;
+    }
+    
+    .team__content {
+        gap: 1.5rem;
+    }
+    
+    .team__title {
+        font-size: var(--size-3xl);
+    }
+    
+    .team__description {
+        font-size: var(--size-base);
+    }
+    
+    .team__subtitle {
+        font-size: var(--size-base);
+    }
+    
+    .team__list {
+        font-size: var(--size-base);
+    }
+}
+
+/* sm */
+@media (min-width: 640px) {
+
+    .team__img-wrapper{
+       margin: 0 auto;
+   }
+    
+   .team__img {
+       width: 28.6875rem;
+   }
+}
+
+/* md */
+/* @media (min-width: 768px) {
+   
+} */
+
+/* lg */
+@media (min-width: 1024px) {
+   .team {
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+    .team__title {
+        font-size: var(--size-4xl);
+    }
+    
+    .team__description {
+        font-size: var(--size-lg);
+    }
+    
+    .team__subtitle {
+        font-size: var(--size-lg);
+    }
+    
+    .team__list {
+        font-size: var(--size-lg);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .team {
+        gap: 2rem;
+    }
+
+    .team__title {
+        font-size: var(--size-5xl);
+    }
+    
+    .team__description {
+        font-size: var(--size-xl);
+    }
+    
+    .team__subtitle {
+        font-size: var(--size-xl);
+    }
+    
+    .team__list {
+        font-size: var(--size-xl);
+    }
+
+    .team__img {
+        width: 30.75rem;
+    }
+
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+   
+}  */

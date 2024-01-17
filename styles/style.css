@@ -1,0 +1,84 @@
+:root {
+    --clr-linen: #fef1ea;
+    --clr-rose: #f6ded3;
+    --clr-peach: #ebccaf;
+    --clr-rust: #ef9b6a;
+    --clr-forest: #2f5019;
+    --clr-dark: #070a13;
+    --clr-light: #f1f5f9;
+    --clr-slate400: #94a3b8;
+    --clr-slate600: #475569;
+    --clar-slate800: #1e293b;
+
+    /* rust: rgb(239, 155, 106) */
+
+    /* sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'perandory-condensed';
+    src: url(../fonts/Perandory-Condensed.otf);
+    font-family: 'telegraf';
+    src: url(../fonts/PPTelegraf-Regular.otf)
+}
+
+body {
+    font-family: 'telegraf', sans-serif;
+    background-color: var(--clr-linen);
+    color: var(--clr-slate800);
+}
+h1 {
+    font-family: 'perandory-condensed', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg{
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+a {
+    color: var(--clr-rust);
+}
+
+strong {
+    color: var(--clr-forest);
+    font-size: var(--size-lg);
+}
