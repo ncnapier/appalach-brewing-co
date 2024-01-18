@@ -42,16 +42,19 @@ html {
 @font-face {
     font-family: 'perandory-condensed';
     src: url(../fonts/Perandory-Condensed.otf);
+    
+}
+@font-face {
     font-family: 'telegraf';
     src: url(../fonts/PPTelegraf-Regular.otf)
 }
 
 body {
-    font-family: 'telegraf', sans-serif;
+    font-family: 'telegraf', sans-serif !important;
     background-color: var(--clr-linen);
     color: var(--clr-slate800);
 }
-h1 {
+body h2 {
     font-family: 'perandory-condensed', sans-serif;
 }
 
@@ -81,4 +84,9 @@ a {
 strong {
     color: var(--clr-forest);
     font-size: var(--size-lg);
+}
+
+main {
+    position: relative;
+    top: 100px;
 }

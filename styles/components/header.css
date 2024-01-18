@@ -4,8 +4,12 @@
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    position: relative;
+    position: fixed;
+    top: 0;
     z-index: 9999;
+    background-color: var(--clr-linen);
+    box-shadow: 0px 5px 20px gray;
+    
 }
 
 .header__menu {
@@ -14,7 +18,7 @@
 .header__title {
     color: var(--clr-forest);
     font-family: 'perandory-condensed';
-    font-size: var(--size-xl)
+    font-size: var(--size-3xl);
     
     
 }
@@ -28,7 +32,7 @@
 /* xs */
 @media (min-width: 375px) {
     .header__title {
-        font-size: var(--size-2xl)
+        font-size: var(--size-3xl)
         
         
     }
@@ -84,6 +88,9 @@
     }
     .header__link {
         font-size: var(--size-sm);
+    }
+    .header__title {
+        font-size: var(--size-5xl)
     }
 }
 
