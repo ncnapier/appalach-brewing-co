@@ -6,6 +6,7 @@ import '../styles/components/mobile-nav.css'
 import '../styles/components/about.css'
 import '../styles/components/team.css'
 import '../styles/components/beers.css'
+import '../styles/components/footer.css'
 import '../styles/utils.css';
 
 import mobileNav from './utils/mobile-nav';

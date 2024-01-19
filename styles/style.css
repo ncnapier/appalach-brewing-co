@@ -60,6 +60,12 @@ body h2 {
     color: var(--clr-forest);
 }
 
+body h3 {
+    font-family: 'perandory-condensed', sans-serif;
+    font-size: var(--size-2xl);
+    color: var(--clr-forest);
+}
+
 img,
 picture,
 video,
@@ -79,16 +85,18 @@ button {
     color: inherit;
 }
 
-a {
+/* a {
     color: var(--clr-rust);
-}
+} */
 
 strong {
     color: var(--clr-forest);
     font-size: var(--size-lg);
 }
 
-main {
+/* main {
     position: relative;
     top: 100px;
-}
+
+} */
+
