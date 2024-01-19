@@ -1,0 +1,13 @@
+.hero {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+.hero__img {
+    width:100%;
+}
+
+.hidden {
+    display: none;
+}

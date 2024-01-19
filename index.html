@@ -68,6 +68,41 @@
       </nav>
     </div>
     <main>
+      <section id="hero" class="hero section">
+        <!-- <img
+          class="hero__img"
+          src="public/brewery.png"
+          alt="the brewery"
+          />
+        <img
+          class="hero__img hidden"
+          src="public/brewery2.png"
+          alt="the brewery"
+          />
+        <img
+          class="hero__img hidden"
+          src="public/brewery3.png"
+          alt="the brewery"
+          />
+        <img
+          class="hero__img hidden"
+          src="public/brewery4.png"
+          alt="the brewery"
+          /> -->
+
+        <img src="" id="hero__img" class="hero__img" alt="the brewery">
+
+        <!-- javascript for changing the hero photo-->
+        <script type="text/javascript">
+          let image = document.getElementById("hero__img");
+          let images = ['/brewery1.png', '/brewery2.png', '/brewery3.png', '/brewery4.png']
+          setInterval(function(){
+            let random = Math.floor(Math.random() * 4);
+            image.src = images[random];
+          }, 3200);
+        </script>
+
+      </section>
       <section id="about" class="about container section">
         
         <div class="about__content">
