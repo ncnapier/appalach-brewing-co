@@ -27,7 +27,11 @@
 
 .team__img {
     border-radius: 50%;
-    
+    width: 10rem; 
+}
+
+.team__img-wrapper {
+    align-self: center;
 }
 
 .team__subtitle {
@@ -94,7 +98,6 @@
     
    .team__img {
        width: 20rem;
-       height: 20rem;
    }
 }
 
@@ -150,9 +153,9 @@
         font-size: var(--size-xl);
     }
 
-    .team__img {
+    /* .team__img {
         width: 30.75rem;
-    }
+    } */
 
 }
 
