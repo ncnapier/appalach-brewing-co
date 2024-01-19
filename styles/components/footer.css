@@ -82,6 +82,10 @@ a {
         
         
     }
+
+    .footer__info-contact, .footer__info-hours {
+        align-self: start;
+    }
 }
 
 /* md */
