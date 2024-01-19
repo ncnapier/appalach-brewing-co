@@ -27,6 +27,7 @@
 
 .team__img {
     border-radius: 50%;
+    
 }
 
 .team__subtitle {
@@ -91,9 +92,10 @@
        margin: 0 auto;
    }
     
-   /* .team__img {
-       width: 28.6875rem;
-   } */
+   .team__img {
+       width: 20rem;
+       height: 20rem;
+   }
 }
 
 /* md */
