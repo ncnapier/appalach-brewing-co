@@ -59,6 +59,11 @@
     margin-top: 5rem;
 }
 
+em {
+    color: var(--clr-forest);
+    
+}
+
 /* xs */
 @media (min-width: 475px){
     .container {

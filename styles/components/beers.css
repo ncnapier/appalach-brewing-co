@@ -15,8 +15,8 @@
     margin: 1rem auto;
 }
 
-.beers__project-title {
-    font-size: var(--size-base);
+.beers__beer-title {
+    font-size: var(--size-xl);
     margin-bottom: 1rem;
 }
 
@@ -41,18 +41,18 @@
     background-color: rgba(150, 179, 171, 0.3);
 }
 
-.beers__project:not(:last-child) {
+.beers__beer:not(:last-child) {
     margin-bottom: 5rem;
 }
 
-.beers__project-description1 {
+.beers__beer-description1 {
     font-size: var(--size-sm);
     color: var(--clr-slate600);
     margin: 1rem 0;
 
 }
 
-.beers__project-description2 {
+.beers__beer-description2 {
     font-size: var(--size-sm);
     color: var(--clr-slate400);
     margin-bottom: 1rem;
@@ -62,11 +62,11 @@
     list-style: none;
 }
 
-.beers__project-btn {
+.beers__beer-btn {
     font-size: var(--size-sm);
 }
 
-.beers__project-subtitle {
+.beers__beer-subtitle {
     display: none;
 }
 
@@ -84,22 +84,22 @@ a {
         font-size: var(--size-base);
         margin: 1.5rem auto;
     }
-    .beers__project-title {
+    .beers__beer-title {
         font-size: var(--size-lg);
         margin-bottom: 1.5rem;
     }
 
-    .beers__project-description1 {
+    .beers__beer-description1 {
         font-size: var(--size-base);
         margin: 1.5rem 0;
     }
     
-    .beers__project-description2 {
+    .beers__beer-description2 {
         font-size: var(--size-base);
         margin-bottom: 1.5rem;
     }
 
-    .beers__project-btn {
+    .beers__beer-btn {
         font-size: var(--size-base);
     }
     
@@ -115,6 +115,9 @@ a {
        'image1 content1'
        'content2 image2'
        'image3 content3'
+       'content4 image4'
+       'image5 content5'
+       'content6 image6'
    }
 
    .beers__image1 {
@@ -126,6 +129,15 @@ a {
    .beers__image3 {
        grid-area: image3;
    }
+   .beers__image4 {
+       grid-area: image4;
+   }
+   .beers__image5 {
+       grid-area: image5;
+   }
+   .beers__image6 {
+       grid-area: image6;
+   }
 
    .beers__content1 {
        grid-area: content1;
@@ -136,34 +148,43 @@ a {
    .beers__content3 {
        grid-area: content3;
    }
+   .beers__content4 {
+       grid-area: content4;
+   }
+   .beers__content5 {
+       grid-area: content5;
+   }
+   .beers__content6 {
+       grid-area: content6;
+   }
 
-   .beers__project {
+   .beers__beer {
        padding: 0 1rem;
    }
 
-   .beers__project-title {
+   .beers__beer-title {
        display: none;
    }
 
-   .beers__project-description1 {
+   .beers__beer-description1 {
     font-size: var(--size-xs);
     margin: 1em 0;
 }
 
-.beers__project-description2 {
+.beers__beer-description2 {
     font-size: var(--size-xs);
     margin-bottom: 1em;
 }
 
-.beers__project-btn {
+.beers__beer-btn {
     font-size: var(--size-xs);
 }
 
-.beers__project:not(:last-child) {
+.beers__beer:not(:last-child) {
     margin-bottom: 0;
 }
 
-.beers__project-subtitle {
+.beers__beer-subtitle {
     display: block;
     font-size: var(--size-base);
 }
@@ -172,19 +193,19 @@ a {
 
 /* md */
 @media (min-width: 768px) {
-    .beers__project-description1 {
+    .beers__beer-description1 {
         font-size: var(--size-sm);
     }
     
-    .beers__project-description2 {
+    .beers__beer-description2 {
         font-size: var(--size-sm);
     }
     
-    .beers__project-btn {
+    .beers__beer-btn {
         font-size: var(--size-sm);
     }
 
-    .beers__project-subtitle {
+    .beers__beer-subtitle {
         font-size: var(--size-lg);
     }
 }
@@ -199,19 +220,19 @@ a {
         font-size: var(--size-lg);
     } 
 
-    .beers__project-description1 {
+    .beers__beer-description1 {
         font-size: var(--size-base);
     }
     
-    .beers__project-description2 {
+    .beers__beer-description2 {
         font-size: var(--size-base);
     }
     
-    .beers__project-btn {
+    .beers__beer-btn {
         font-size: var(--size-base);
     }
 
-    .beers__project-subtitle {
+    .beers__beer-subtitle {
         font-size: var(--size-xl);
     }
 }
@@ -227,19 +248,19 @@ a {
         margin: 2rem auto;
     }
 
-    .beers__project-description1 {
+    .beers__beer-description1 {
         font-size: var(--size-lg);
     }
     
-    .beers__project-description2 {
+    .beers__beer-description2 {
         font-size: var(--size-lg);
     }
     
-    .beers__project-btn {
+    .beers__beer-btn {
         font-size: var(--size-lg);
     }
 
-    .beers__project-subtitle {
+    .beers__beer-subtitle {
         font-size: var(--size-2xl);
     }
 
