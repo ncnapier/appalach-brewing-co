@@ -1,0 +1,257 @@
+.beers {
+    text-align: center;
+
+}
+
+/* .beers__title {
+    font-size: var(--size-2xl);
+    color: var(--clr-forest);
+} */
+
+.beers__description {
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+    margin: 1rem auto;
+}
+
+.beers__project-title {
+    font-size: var(--size-base);
+    margin-bottom: 1rem;
+}
+
+.beers__img-wrapper {
+    position: relative;
+}
+
+
+.beers__img-wrapper::after {
+    content: '';
+    background-color: rgba(150, 179, 171, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+.beers__img-wrapper:hover::after{
+    background-color: rgba(150, 179, 171, 0.3);
+}
+
+.beers__project:not(:last-child) {
+    margin-bottom: 5rem;
+}
+
+.beers__project-description1 {
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+    margin: 1rem 0;
+
+}
+
+.beers__project-description2 {
+    font-size: var(--size-sm);
+    color: var(--clr-slate400);
+    margin-bottom: 1rem;
+}
+
+.beers__description-list {
+    list-style: none;
+}
+
+.beers__project-btn {
+    font-size: var(--size-sm);
+}
+
+.beers__project-subtitle {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .beers__title {
+        font-size: var(--size-3xl);
+    }
+    
+    .beers__description {
+        font-size: var(--size-base);
+        margin: 1.5rem auto;
+    }
+    .beers__project-title {
+        font-size: var(--size-lg);
+        margin-bottom: 1.5rem;
+    }
+
+    .beers__project-description1 {
+        font-size: var(--size-base);
+        margin: 1.5rem 0;
+    }
+    
+    .beers__project-description2 {
+        font-size: var(--size-base);
+        margin-bottom: 1.5rem;
+    }
+
+    .beers__project-btn {
+        font-size: var(--size-base);
+    }
+    
+}
+
+/* sm */
+@media (min-width: 640px) {
+   .beers__container {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       place-items: center;
+       grid-template-areas: 
+       'image1 content1'
+       'content2 image2'
+       'image3 content3'
+   }
+
+   .beers__image1 {
+       grid-area: image1;
+   }
+   .beers__image2 {
+       grid-area: image2;
+   }
+   .beers__image3 {
+       grid-area: image3;
+   }
+
+   .beers__content1 {
+       grid-area: content1;
+   }
+   .beers__content2 {
+       grid-area: content2;
+   }
+   .beers__content3 {
+       grid-area: content3;
+   }
+
+   .beers__project {
+       padding: 0 1rem;
+   }
+
+   .beers__project-title {
+       display: none;
+   }
+
+   .beers__project-description1 {
+    font-size: var(--size-xs);
+    margin: 1em 0;
+}
+
+.beers__project-description2 {
+    font-size: var(--size-xs);
+    margin-bottom: 1em;
+}
+
+.beers__project-btn {
+    font-size: var(--size-xs);
+}
+
+.beers__project:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.beers__project-subtitle {
+    display: block;
+    font-size: var(--size-base);
+}
+
+}
+
+/* md */
+@media (min-width: 768px) {
+    .beers__project-description1 {
+        font-size: var(--size-sm);
+    }
+    
+    .beers__project-description2 {
+        font-size: var(--size-sm);
+    }
+    
+    .beers__project-btn {
+        font-size: var(--size-sm);
+    }
+
+    .beers__project-subtitle {
+        font-size: var(--size-lg);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .beers__title {
+        font-size: var(--size-4xl);
+    }
+    
+    .beers__description {
+        font-size: var(--size-lg);
+    } 
+
+    .beers__project-description1 {
+        font-size: var(--size-base);
+    }
+    
+    .beers__project-description2 {
+        font-size: var(--size-base);
+    }
+    
+    .beers__project-btn {
+        font-size: var(--size-base);
+    }
+
+    .beers__project-subtitle {
+        font-size: var(--size-xl);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .beers__title {
+        font-size: var(--size-5xl);
+    }
+    
+    .beers__description {
+        font-size: var(--size-xl);
+        margin: 2rem auto;
+    }
+
+    .beers__project-description1 {
+        font-size: var(--size-lg);
+    }
+    
+    .beers__project-description2 {
+        font-size: var(--size-lg);
+    }
+    
+    .beers__project-btn {
+        font-size: var(--size-lg);
+    }
+
+    .beers__project-subtitle {
+        font-size: var(--size-2xl);
+    }
+
+    .beers__container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+   .beers__container {
+       width: 70%;
+   }
+} 
