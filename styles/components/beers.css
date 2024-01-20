@@ -24,8 +24,28 @@
     position: relative;
 }
 
+/* hover functioning for beer icons */
 
-.beers__img-wrapper::after {
+img[alt="renegade mountain brown ale"]:hover{
+    content:url(/public/brown-forest.png);
+}
+img[alt="catoosa west coast IPA"]:hover{
+    content:url(/public/ipa-forest.png);
+}
+img[alt="sells red ale"]:hover{
+    content:url(/public/red-forest.png);
+}
+img[alt="tansi saison"]:hover{
+    content:url(/public/saison-forest.png);
+}
+img[alt="black mountain stout"]:hover{
+    content:url(/public/stout-forest.png);
+}
+img[alt="spiced renegade"]:hover{
+    content:url(/public/spiced-forest.png);
+}
+
+/* .beers__img-wrapper::after {
     content: '';
     background-color: rgba(47, 80, 25, 0.4);
     width: 100%;
@@ -39,7 +59,7 @@
 
 .beers__img-wrapper:hover::after{
     background-color: rgba(47, 80, 25, 0.3);
-}
+} */
 
 .beers__beer:not(:last-child) {
     margin-bottom: 5rem;
