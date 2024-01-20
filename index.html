@@ -108,8 +108,7 @@
         <div class="about__content">
           <h2 class="about__title">About Us</h2>
           <p class="about__description">
-            <strong>Appalach Brewing Company </strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum corporis assumenda dolor, rem repellat ipsa quae vero laudantium corrupti earum adipisci, totam dicta aliquid nemo quibusdam, velit nostrum. Cum, labore.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem doloremque amet iusto perferendis explicabo odio nam nihil itaque ipsum fuga provident aliquid dicta cupiditate, veritatis reprehenderit qui pariatur perspiciatis natus.
+            <strong>Appalach Brewing Company </strong>is proud to be the first and only craft brewery on the Cumberland Plateau. Appalach was started when childhood friends Zach and Nathaniel decided to use their expertise (of food-service management and craft brewing) to bring great beer to the heart of the Cumberland. Inspired by the wonderful and unique beauty of the Cumberland Plateau, we craft all of our beers to capture the natural wonder of our home. Whether you're a local, on vacation, or just passing through- we welcome you into our taproom to experience the flavor of the Appalachians in every drink.
           </p>
         </div>
         <div class="about__img-wrapper">
@@ -132,7 +131,7 @@
         <div class="team__content">
           <h2 class="team__title">Our Team</h2>
           <p class="team__description">
-            <strong>Nathaniel Napier</strong>: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus ipsa, reiciendis omnis ratione neque sint vero possimus! Nulla similique placeat dicta id voluptate reiciendis aliquam aspernatur illo necessitatibus sed? Excepturi!
+            <strong>Nathaniel Napier</strong>: A biochemist by training- Nathaniel harnesses his background in laboratory sciences to precisely craft beers that reflect the wild wonder of the Cumberland. 
           </p>
         </div>
         
@@ -144,12 +143,12 @@
         </p>
         <div class="beers__container">
           <!-- Beer 1 -->
-          <h2 class="beers__beer-title">Renegade Mountain Brown Ale</h2>
+          <h2 class="beers__beer-title" onclick="openModal();currentSlide(1)">Renegade Mountain Brown Ale</h2>
           <div class="beers__img-wrapper beers__image1">
-              <img loading="lazy" src="public/brown.png" alt="renegade mountain brown ale" />
+              <img onclick="openModal();currentSlide(1)" class="hover-shadow" loading="lazy" src="public/brown.png" alt="renegade mountain brown ale" />
           </div>
           <div class="beers__beer beers__content1">
-            <h2 class="beers__beer-subtitle">Renegade Mountain Brown Ale</h2>
+            <h2 class="beers__beer-subtitle" onclick="openModal();currentSlide(1)">Renegade Mountain Brown Ale</h2>
             <p class="beers__beer-description1">
               <ul class="beers__description-list">
                 <li>
@@ -334,6 +333,87 @@
           
           
         </div>
+
+        <!-- Images used to open up the light box
+                onclick="openModal();currentSlide(1)" class="hover-shadow"
+
+                added to each image
+        -->
+
+        <!-- The Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="/public/brown.png" style="width:100%" >
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="/public/ipa.png" style="width:100%" >
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="/public/red.png" style="width:100%" >
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="/public/saison.png" style="width:100%" >
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="/public/stout.png" style="width:100%" >
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="/public/spiced.png" style="width:100%" >
+            </div>
+
+            <!-- Next / Prev Controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption Text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+              <img class="demo" src="/public/brown.png" onclick="currentSlide(1)" alt="Renegade Mountain Brown Ale">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="/public/ipa.png" onclick="currentSlide(2)" alt="Catoosa West Coast IPA">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="/public/red.png" onclick="currentSlide(3)" alt="Sells Red Ale">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="/public/saison.png" onclick="currentSlide(4)" alt="Tansi Saison">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="/public/stout.png" onclick="currentSlide(4)" alt="Black Mountain Stout">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="/public/spiced.png" onclick="currentSlide(4)" alt="Spiced Renegade">
+            </div>
+
+
+          </div>
+        </div>
+
+
+        
+        
+
+
+
       </section>
       
     </main>
@@ -358,7 +438,50 @@
         
       <h4 class="footer__logo">2024 <a href="https://web-dev-portfolio-ebon.vercel.app/" target="_blank">nattydevs</a></h4>
     </footer>
-    <!-- End of Mobile Navigation -->
+    
     <script type="module" src="./src/main.js"></script>
+    <!-- slide functioning javascript -->
+    <script>
+      // Open the Modal
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+      
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+      
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
   </body>
 </html>
