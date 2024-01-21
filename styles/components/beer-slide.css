@@ -19,7 +19,7 @@
     display: none;
     position: fixed;
     z-index: 10000;
-    padding-top: 100px;
+    padding-top: 0px;
     left: 0;
     top: 0;
     width: 100%;
@@ -46,6 +46,7 @@
     right: 25px;
     font-size: 35px;
     font-weight: bold;
+    z-index: 20000;
   }
   
   .close:hover,
@@ -83,6 +84,10 @@
     right: 0;
     border-radius: 3px 0 0 3px;
   }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
@@ -107,7 +112,11 @@
     padding: 2px 16px;
     color: var(--clr-forest);
     font-family: 'perandory-condensed';
-    font-size: var(--size-4xl)
+    font-size: var(--size-4xl);
+    
+    
+    
+    
   }
   
   img.demo {
@@ -126,3 +135,45 @@
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+  
+/* xs */
+/* @media (min-width: 475px){
+    
+} */
+
+/* sm */
+@media (min-width: 640px){
+    .modal-content {
+        width: 500px;
+    }
+
+    .caption-container {
+        position:absolute;
+        top: 35rem;
+        right: 0;
+        left: 0;
+        
+        
+      }
+}
+
+/* md */
+/* @media (min-width: 768px){
+    
+} */
+
+/* lg */
+/* @media (min-width: 1024px){
+    
+} */
+
+/* xl */
+/* @media (min-width: 1280px){
+    
+} */
+
+/* 2xl */
+/* @media (min-width: 1536px){
+    
+} */
