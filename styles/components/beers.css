@@ -18,6 +18,8 @@
 .beers__beer-title {
     font-size: var(--size-xl);
     margin-bottom: 1rem;
+    border-top: 5px solid var(--clr-peach);
+    padding-top: 20px;
 }
 
 .beers__img-wrapper {
