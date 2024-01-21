@@ -16,14 +16,17 @@
 }
 
 .beers__beer-title {
-    font-size: var(--size-xl);
-    margin-bottom: 1rem;
+    font-size: var(--size-3xl);
+    margin-bottom: 0;
     
     padding-top: 20px;
+    position: relative;
+    top: 70px;
 }
 
 .beers__img-wrapper {
     position: relative;
+    bottom: 50px;
 }
 
 /* hover functioning for beer icons */
@@ -79,12 +82,16 @@ img[alt="spiced renegade"]:hover{
     color: var(--clr-slate400);
     margin-bottom: 1rem;
     background-color: var(--clr-peach);
+    position: relative;
+    bottom: 200px;
 }
 
 .beers__description-list {
     list-style: none;
     border: 1px solid var(--clr-peach);
     padding: 20px;
+    position: relative;
+    bottom: 200px;
 }
 
 .beers__beer-btn {
@@ -111,7 +118,7 @@ a {
         margin: 1.5rem auto;
     }
     .beers__beer-title {
-        font-size: var(--size-lg);
+        
         margin-bottom: 1.5rem;
     }
 
@@ -200,6 +207,7 @@ a {
 .beers__beer-description2 {
     font-size: var(--size-xs);
     margin-bottom: 1em;
+    position: static;
 }
 
 .beers__beer-btn {
@@ -213,6 +221,14 @@ a {
 .beers__beer-subtitle {
     display: block;
     font-size: var(--size-4xl);
+}
+
+.beers__img-wrapper {
+    position: static;
+}
+
+.beers__description-list {
+    position: static;
 }
 
 }
