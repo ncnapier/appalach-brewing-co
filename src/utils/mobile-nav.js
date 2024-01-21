@@ -8,8 +8,6 @@ const mobileNav = () => {
   
     headerBtn.addEventListener("click", () => {
       isMobileNavOpen = !isMobileNavOpen;
-    //   document.body.scrollTop = 0;
-    //   document.documentElement = 0;
       if (isMobileNavOpen) {
           mobileNav.style.display = "flex";
       document.body.style.overflowY = 'hidden';

@@ -68,7 +68,7 @@
 }
 
 
-.team__img-wrapper::after {
+/* .team__img-wrapper::after {
     content: '';
     background-color: rgba(47, 80, 25, 0.4);
     width: 100%;
@@ -83,7 +83,7 @@
 
 .team__img-wrapper:hover::after{
     background-color: rgba(47, 80, 25, 0.3);
-}
+} */
 
 /* xs */
 @media (min-width: 475px) {
@@ -119,9 +119,9 @@
        margin: 0 auto;
    }
     
-   .team__img {
+   /* .team__img {
        width: 20rem;
-   }
+   } */
 }
 
 /* md */
