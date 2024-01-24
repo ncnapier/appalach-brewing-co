@@ -105,6 +105,7 @@ img[alt="spiced renegade"]:hover{
 
 .beers__beer-subtitle {
     display: none;
+    cursor: pointer;
     
 }
 
