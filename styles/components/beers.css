@@ -81,14 +81,14 @@ img[alt="spiced renegade"]:hover{
     font-size: var(--size-sm);
     color: var(--clr-slate400);
     margin-bottom: 1rem;
-    background-color: var(--clr-peach);
+    /* background-color: var(--clr-peach); */
     position: relative;
     bottom: 200px;
 }
 
 .beers__description-list {
     list-style: none;
-    border: 1px solid var(--clr-peach);
+    /* border: 1px solid var(--clr-peach); */
     padding: 20px;
     position: relative;
     bottom: 200px;
