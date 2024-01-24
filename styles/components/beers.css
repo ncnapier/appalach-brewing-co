@@ -29,6 +29,10 @@
     bottom: 50px;
 }
 
+img:hover{
+    cursor: pointer;
+}
+
 /* hover functioning for beer icons */
 
 img[alt="renegade mountain brown ale"]:hover{
